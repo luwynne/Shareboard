@@ -1,0 +1,63 @@
+Abstract classes>> cannot be instantiated directly, if something fromt that class needs 
+to be used, then it needs to instantiated by another, class, no directly. If its methods and
+properties are abstract, then the class also needs to be abstract.
+
+The old property call Var is the same as a public for the php 5 and on
+
+The constructor method can also receive parameters 
+
+Private and protected are not to be instantiated outside the class. Private can only be accesd
+inside the class, and protected can be accessed in a child class 
+
+All the magic methods start with the __methodName >> Double underscore
+
+Set and get methods are used not as a common method but as a class property.
+The way you call then is the same as calling an object property and not a common method,
+because they are built in function of object oriented languages
+Eg: $post - new Post;
+$post->name = Testing; //setting name to posting inside the __set method
+echo $post->name; //printing out the name from __get method
+
+__isset() method return a value if the property is already set or not
+it returns a boolean value of true or false
+
+Static properties >> Static things cannot have its value changed. Thats refers to values that
+wont be changed along the way
+Use the word self:: to access static properties from its own class and use the ClassName:: to access static methods from static outer classes
+
+
+Autoloading classes>> SPL autoload classes files will autoload all the classes for you
+
+
+PDO >> php data object. Gives us nice and secure interface to interact with the database.
+
+Binding method >> allows us to fetch and insert data into the database
+
+___________
+
+Building a custom MVC application - The structure
+
+
+In order to access the Class and method by the url, we have to create the doc.htaccess file. So it comes in as a root request and through a get we can create that. This takes some parameters that will then be executed.
+
+
+After creating the bootstrap method, create the controller class
+
+For convention, when creating the class files, the controllers files are plural and the model files are singular
+
+inside a class you should use 
+if (){
+
+} 
+
+wheres inside a page with html files you should use <?php  if(): ?> and <?php endif ?>
+the same for foreach, while, do and for loops
+
+
+
+
+
+
+
+
+
